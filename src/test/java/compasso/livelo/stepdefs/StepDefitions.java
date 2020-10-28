@@ -28,6 +28,8 @@ public class StepDefitions {
 		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 
+		driver.manage().window().maximize();
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	

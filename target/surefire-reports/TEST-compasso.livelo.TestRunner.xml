@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="compasso.livelo.TestRunner" time="90.662" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="compasso.livelo.TestRunner" time="72.138" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -65,86 +65,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="compasso.livelo.TestRunner" name="runScenario" time="47.748"/>
-  <testcase classname="compasso.livelo.TestRunner" name="runScenario" time="42.914">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cc-prodDetails-addToCart&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MATHEUS&apos;, ip: &apos;192.168.91.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Matheus\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3f822b247680e95f13b4df2e9bbd03a3
-*** Element info: {Using=css selector, value=#cc-prodDetails-addToCart}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cc-prodDetails-addToCart&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MATHEUS&apos;, ip: &apos;192.168.91.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Matheus\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3f822b247680e95f13b4df2e9bbd03a3
-*** Element info: {Using=css selector, value=#cc-prodDetails-addToCart}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at compasso.livelo.pages.ProductDetailPage.adicionarProdutoAoCarrinho(ProductDetailPage.java:20)
-	at compasso.livelo.stepdefs.StepDefitions.adicionar_o_produto_ao_carrinho(StepDefitions.java:60)
-	at ✽.adicionar o produto ao carrinho(file:///C:/Users/Matheus/desafios-workspace/livelo/src/test/resources/features/carrinho.feature:13)
-</failure>
-    <system-out>
-Esquema do CenÃ¡rio: Adicionar produto ao carrinho de compras                          &amp;#27;[90m# src/test/resources/features/carrinho.feature:21&amp;#27;[0m
-  &amp;#27;[32mDado &amp;#27;[0m&amp;#27;[32mque um navegador esta na home page da Livelo&amp;#27;[0m                                   &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.que_um_navegador_esta_na_home_page_da_livelo()&amp;#27;[0m
-  &amp;#27;[32mQuando &amp;#27;[0m&amp;#27;[32mpesquisar por &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Ventilador de Mesa Mondial Turbo Pro 55&quot;&amp;#27;[0m&amp;#27;[32m na barra de pesquisa&amp;#27;[0m &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.pesquisar_por_na_barra_de_pesquisa(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mE &amp;#27;[0m&amp;#27;[32mselecionar o primeiro produto do resultado da pesquisa&amp;#27;[0m                            &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.selecionar_o_primeiro_produto_do_resultado_da_pesquisa()&amp;#27;[0m
-  &amp;#27;[31mE &amp;#27;[0m&amp;#27;[31madicionar o produto ao carrinho&amp;#27;[0m                                                   &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.adicionar_o_produto_ao_carrinho()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cc-prodDetails-addToCart&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MATHEUS&apos;, ip: &apos;192.168.91.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Matheus\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3f822b247680e95f13b4df2e9bbd03a3
-*** Element info: {Using=css selector, value=#cc-prodDetails-addToCart}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at compasso.livelo.pages.ProductDetailPage.adicionarProdutoAoCarrinho(ProductDetailPage.java:20)
-	at compasso.livelo.stepdefs.StepDefitions.adicionar_o_produto_ao_carrinho(StepDefitions.java:60)
-	at âœ½.adicionar o produto ao carrinho(file:///C:/Users/Matheus/desafios-workspace/livelo/src/test/resources/features/carrinho.feature:13)
-&amp;#27;[0m
-  &amp;#27;[36mEntao &amp;#27;[0m&amp;#27;[36mo navegador e direcionado para a pagina do carrinho&amp;#27;[0m                           &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.o_navegador_e_direcionado_para_a_pagina_do_carrinho()&amp;#27;[0m
-  &amp;#27;[36mE &amp;#27;[0m&amp;#27;[36mna descricao do produto deve conter &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Ventilador de Mesa Mondial Turbo Pro 55&quot;&amp;#27;[0m     &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.na_descricao_do_produto_deve_conter(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mE &amp;#27;[0m&amp;#27;[36ma quantidade deve ser &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m1&amp;#27;[0m                                                           &amp;#27;[90m# compasso.livelo.stepdefs.StepDefitions.a_quantidade_deve_ser(java.lang.Integer)&amp;#27;[0m
-</system-out>
-    <system-err>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 45893
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-out 28, 2020 3:44:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMAÇÕES: Detected dialect: W3C
-</system-err>
-  </testcase>
+  <testcase classname="compasso.livelo.TestRunner" name="runScenario" time="40.39"/>
+  <testcase classname="compasso.livelo.TestRunner" name="runScenario" time="31.748"/>
 </testsuite>

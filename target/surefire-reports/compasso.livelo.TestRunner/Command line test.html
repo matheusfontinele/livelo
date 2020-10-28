@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 28 15:43:13 BRT 2020</td>
+<td>Started on:</td><td>Wed Oct 28 16:40:08 BRT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>91 seconds (91754 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72890 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,68 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='compasso.livelo.TestRunner.runScenario()'><b>runScenario</b><br>Test class: compasso.livelo.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adicionar produto ao carrinho de compras", "Optional[Carrinho de compra]"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cc-prodDetails-addToCart&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MATHEUS&apos;, ip: &apos;192.168.91.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Matheus\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3f822b247680e95f13b4df2e9bbd03a3
-*** Element info: {Using=css selector, value=#cc-prodDetails-addToCart}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at compasso.livelo.pages.ProductDetailPage.adicionarProdutoAoCarrinho(ProductDetailPage.java:20)
-	at compasso.livelo.stepdefs.StepDefitions.adicionar_o_produto_ao_carrinho(StepDefitions.java:60)
-	at ?.adicionar o produto ao carrinho(file:///C:/Users/Matheus/desafios-workspace/livelo/src/test/resources/features/carrinho.feature:13)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82825098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace82825098'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#cc-prodDetails-addToCart&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MATHEUS&apos;, ip: &apos;192.168.91.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Matheus\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3f822b247680e95f13b4df2e9bbd03a3
-*** Element info: {Using=css selector, value=#cc-prodDetails-addToCart}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at compasso.livelo.pages.ProductDetailPage.adicionarProdutoAoCarrinho(ProductDetailPage.java:20)
-	at compasso.livelo.stepdefs.StepDefitions.adicionar_o_produto_ao_carrinho(StepDefitions.java:60)
-	at ?.adicionar o produto ao carrinho(file:///C:/Users/Matheus/desafios-workspace/livelo/src/test/resources/features/carrinho.feature:13)
-</pre></div></td>
-<td>42</td>
-<td>compasso.livelo.TestRunner@56ef9176</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -139,7 +77,12 @@ Session ID: 3f822b247680e95f13b4df2e9bbd03a3
 <tr>
 <td title='compasso.livelo.TestRunner.runScenario()'><b>runScenario</b><br>Test class: compasso.livelo.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adicionar produto ao carrinho de compras", "Optional[Carrinho de compra]"</td>
 <td></td>
-<td>47</td>
+<td>40</td>
+<td>compasso.livelo.TestRunner@56ef9176</td></tr>
+<tr>
+<td title='compasso.livelo.TestRunner.runScenario()'><b>runScenario</b><br>Test class: compasso.livelo.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adicionar produto ao carrinho de compras", "Optional[Carrinho de compra]"</td>
+<td></td>
+<td>31</td>
 <td>compasso.livelo.TestRunner@56ef9176</td></tr>
 </table><p>
 </body>
