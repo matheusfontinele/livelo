@@ -8,7 +8,7 @@ O projeto foi criado sobre a seguinte Stack:
 - Selenium WebDriver
 - TestNG
 
-##Repositório do Projeto
+## Repositório do Projeto
 https://github.com/matheusfontinele/livelo.git
 
 ## Instalação

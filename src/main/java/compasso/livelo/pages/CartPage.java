@@ -13,7 +13,9 @@ public class CartPage {
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
 		
-		wait = new WebDriverWait(this.driver,15);
+		//Os elementos dessa página estão demorando mais para carregar
+		//Por isso foi necessário um wait explicito
+		wait = new WebDriverWait(this.driver,20);
 	}
 	
 	private By seuCarrinhoLabel = By.xpath("//div[@id='CC-cart-list']//h1[@class='h2']");
