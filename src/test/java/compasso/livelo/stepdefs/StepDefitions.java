@@ -5,8 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import compasso.livelo.pages.CartPage;
 import compasso.livelo.pages.HomePage;
+import compasso.livelo.pages.ProductDetailPage;
 import compasso.livelo.pages.ResultSearchPage;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
@@ -16,53 +20,65 @@ public class StepDefitions {
 	WebDriver driver;
 	HomePage homePage;
 	ResultSearchPage resultSearchPage;
-	
-	@Dado("que estou na home site da Livelo")
-	public void que_estou_na_home_site_da_Livelo() {
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver.exe");
+	ProductDetailPage productDetailPage;
+	CartPage cartPage;
+
+	@Before
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver.exe");
 		this.driver = new ChromeDriver();
-	
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		this.driver.get("https://www.livelo.com.br/");
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	@Dado("pesquiso pelo produto {string}")
-	public void pesquiso_pelo_produto(String produto) {
+	@After
+	public void finishExection() {
+		this.driver.quit();
+	}
+
+	@Dado("que um navegador esta na home page da Livelo")
+	public void que_um_navegador_esta_na_home_page_da_livelo() {
+		this.driver.get("https://www.livelo.com.br/");
+	}
+
+	@Quando("pesquisar por {string} na barra de pesquisa")
+	public void pesquisar_por_na_barra_de_pesquisa(String produto) {
 		homePage = new HomePage(driver);
 		homePage.autorizarCokkie();
 		homePage.pesquisarProduto(produto);
 	}
 
-	@Quando("eu selecionar o primeiro produto da lista")
-	public void eu_selecionar_o_primeiro_produto_da_lista() {
-	    resultSearchPage = new ResultSearchPage(driver);
-	    resultSearchPage.clicarNoPrimeiroProduto();
-	}
-	
-	@Entao("devo estar na pagina de detalhe do produto")
-	public void devo_estar_na_pagina_de_detalhe_do_produto() {
-
-	}
-	
-	@Quando("clicar no botao {string}")
-	public void clicar_no_botao(String string) {
-	    
+	@Quando("selecionar o primeiro produto do resultado da pesquisa")
+	public void selecionar_o_primeiro_produto_do_resultado_da_pesquisa() {
+		resultSearchPage = new ResultSearchPage(driver);
+		resultSearchPage.clicarNoPrimeiroProduto();
 	}
 
-	@Entao("deve ser direcionado para a pagina do carrinho")
-	public void deve_ser_direcionado_para_a_pagina_do_carrinho() {
-	    
+	@Quando("adicionar o produto ao carrinho")
+	public void adicionar_o_produto_ao_carrinho() {
+		productDetailPage = new ProductDetailPage(this.driver);
+		productDetailPage.adicionarProdutoAoCarrinho();
 	}
-	
-	@Entao("o valor do pedido deve estar correto")
-	public void o_valor_do_pedido_deve_estar_correto() {
-	 
+
+	@Entao("o navegador e direcionado para a pagina do carrinho")
+	public void o_navegador_e_direcionado_para_a_pagina_do_carrinho() {
+		cartPage = new CartPage(this.driver);
+		
+		//Verificao 
+		assert (cartPage.getTituloPagina().equals("Seu carrinho")); 
+		
+		assert (driver.getCurrentUrl().equals("https://www.livelo.com.br/cart"));
 	}
-	
+
+	@Entao("na descricao do produto deve conter {string}")
+	public void na_descricao_do_produto_deve_conter(String produto) {
+		
+		assert (cartPage.getDescricaoProduto().contains(produto));
+	}
+
 	@Entao("a quantidade deve ser {int}")
-	public void a_quantidade_deve_ser(Integer int1) {
-	    
+	public void a_quantidade_deve_ser(Integer quantidade) {
+		assert (cartPage.getQuantidadeProduto() == quantidade);
 	}
 
 }

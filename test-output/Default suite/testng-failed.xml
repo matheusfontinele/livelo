@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="compasso.livelo.HomePageTest">
+      <class name="compasso.livelo.TestRunner">
         <methods>
-          <include name="pesquisarProdutoCorretamente"/>
-          <include name="setUp"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- compasso.livelo.HomePageTest -->
+      </class> <!-- compasso.livelo.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

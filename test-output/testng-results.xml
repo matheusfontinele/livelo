@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11508" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
+  <suite name="Default suite" duration-ms="95323" started-at="2020-10-28T15:39:21 BRT" finished-at="2020-10-28T15:40:56 BRT">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@704a52ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="11508" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
-      <class name="compasso.livelo.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:compasso.livelo.HomePageTest@614ddd49]" name="setUp" is-config="true" duration-ms="8115" started-at="2020-10-27T03:00:41 BRT" finished-at="2020-10-27T03:00:50 BRT">
+    <test name="Default test" duration-ms="95323" started-at="2020-10-28T15:39:21 BRT" finished-at="2020-10-28T15:40:56 BRT">
+      <class name="compasso.livelo.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:compasso.livelo.TestRunner@704a52ec]" name="setUpClass" is-config="true" duration-ms="684" started-at="2020-10-28T15:39:21 BRT" finished-at="2020-10-28T15:39:22 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pesquisarProdutoCorretamente()[pri:0, instance:compasso.livelo.HomePageTest@614ddd49]" name="pesquisarProdutoCorretamente" duration-ms="11440" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@704a52ec]" name="runScenario" duration-ms="45945" started-at="2020-10-28T15:39:22 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T15:40:08 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adicionar produto ao carrinho de compras"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Carrinho de compra]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pesquisarProdutoCorretamente -->
-      </class> <!-- compasso.livelo.HomePageTest -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@704a52ec]" name="runScenario" duration-ms="48526" started-at="2020-10-28T15:40:08 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T15:40:56 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adicionar produto ao carrinho de compras"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Carrinho de compra]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:compasso.livelo.TestRunner@704a52ec]" name="tearDownClass" is-config="true" duration-ms="52" started-at="2020-10-28T15:40:56 BRT" finished-at="2020-10-28T15:40:56 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- compasso.livelo.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

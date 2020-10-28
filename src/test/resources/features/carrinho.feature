@@ -2,19 +2,23 @@
 
 	Funcionalidade: Carrinho de compra
 	Como cliente/usuario da Livelo
-	Desejo escolher um produto
-	Para que ele seja colocado no carrinho de compras
+	Desejo escolher um(ns) produto(s)
+	Para que ele(s) seja(m) adicionado(s) no carrinho de compras
 	
 
-	Cenário: Adicionar produto ao carrinho de compras
-	Dado que estou na home site da Livelo
-	E pesquiso pelo produto "Alexa"
-	Quando eu selecionar o primeiro produto da lista
-	Entao devo estar na pagina de detalhe do produto
-	Quando clicar no botao "Adicionar ao Carrinho"
-	Entao deve ser direcionado para a pagina do carrinho
-	E o valor do pedido deve estar correto
-	E a quantidade deve ser 1
+	Esquema do Cenário: Adicionar produto ao carrinho de compras
+	Dado que um navegador esta na home page da Livelo	
+	Quando pesquisar por <produto> na barra de pesquisa
+	E selecionar o primeiro produto do resultado da pesquisa
+	E adicionar o produto ao carrinho
+	Entao o navegador e direcionado para a pagina do carrinho
+	E na descricao do produto deve conter <produto> 
+	E a quantidade deve ser <quantidade>
+	
+	Exemplos:
+	|produto 									|quantidade	|
+	|"Echo Dot 3" 								|1			|
+	|"Ventilador de Mesa Mondial Turbo Pro 55"	|1			|
 	
 	
 	
