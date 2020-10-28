@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="compasso.livelo.TestRunner" duration-ms="72890" started-at="2020-10-28T16:40:08 BRT" finished-at="2020-10-28T16:41:21 BRT">
+  <suite name="compasso.livelo.TestRunner" duration-ms="75883" started-at="2020-10-28T18:08:40 BRT" finished-at="2020-10-28T18:09:56 BRT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Command line test" duration-ms="72890" started-at="2020-10-28T16:40:08 BRT" finished-at="2020-10-28T16:41:21 BRT">
+    <test name="Command line test" duration-ms="75883" started-at="2020-10-28T18:08:40 BRT" finished-at="2020-10-28T18:09:56 BRT">
       <class name="compasso.livelo.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="setUpClass" is-config="true" duration-ms="660" started-at="2020-10-28T16:40:08 BRT" finished-at="2020-10-28T16:40:09 BRT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="setUpClass" is-config="true" duration-ms="609" started-at="2020-10-28T18:08:40 BRT" finished-at="2020-10-28T18:08:40 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="runScenario" duration-ms="40372" started-at="2020-10-28T16:40:09 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T16:40:49 BRT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="runScenario" duration-ms="37268" started-at="2020-10-28T18:08:40 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T18:09:18 BRT">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="runScenario" duration-ms="31765" started-at="2020-10-28T16:40:49 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T16:41:21 BRT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="runScenario" duration-ms="37924" started-at="2020-10-28T18:09:18 BRT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-28T18:09:55 BRT">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="tearDownClass" is-config="true" duration-ms="16" started-at="2020-10-28T16:41:21 BRT" finished-at="2020-10-28T16:41:21 BRT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:compasso.livelo.TestRunner@56ef9176]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2020-10-28T18:09:56 BRT" finished-at="2020-10-28T18:09:56 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
