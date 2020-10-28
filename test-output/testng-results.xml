@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11508" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11508" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
+      <class name="compasso.livelo.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:compasso.livelo.HomePageTest@614ddd49]" name="setUp" is-config="true" duration-ms="8115" started-at="2020-10-27T03:00:41 BRT" finished-at="2020-10-27T03:00:50 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="pesquisarProdutoCorretamente()[pri:0, instance:compasso.livelo.HomePageTest@614ddd49]" name="pesquisarProdutoCorretamente" duration-ms="11440" started-at="2020-10-27T03:00:50 BRT" finished-at="2020-10-27T03:01:01 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pesquisarProdutoCorretamente -->
+      </class> <!-- compasso.livelo.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
