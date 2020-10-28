@@ -23,7 +23,7 @@ Para verificar se o Java está corretamente instalado, basta abrir um prompt de 
 ```sh
 java -version
 ```
-O comando será reconhecido e informara a versão do Java que foi configurada como variável de ambiente. A resposta será parecido com o trecho abaixo:
+O comando será reconhecido e informará a versão do Java que foi configurada como variável de ambiente. A resposta será parecido com o trecho abaixo:
 ```sh
 java version "1.8.0_241"
 Java(TM) SE Runtime Environment (build 1.8.0_241-b07)
@@ -51,7 +51,7 @@ Considerando que ambiente esteja configurado, executar o prompt (cmd) no diretó
 ```sh
 mvn clean install
 ```
-O camando ira realizar a instalação de todos os pacotes do projeto como também realizar a execução do testes. Sendo assim, com apenas um comendo já é possível instalar e executar. A trecho abaixo representa o final da execução do comando:
+O comando ira realizar a instalação de todos os pacotes do projeto como também realizar a execução do testes. Sendo assim, com apenas um comando já é possível instalar e executar. A trecho abaixo representa o final da execução do comando:
 ```sh
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.3 sec
 
